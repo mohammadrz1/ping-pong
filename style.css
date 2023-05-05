@@ -1,0 +1,115 @@
+body{
+    background: linear-gradient(to right , red, blue);
+    background-size: 400% 400%;
+    animation: changebackground 4s infinite;
+}
+
+@keyframes changebackground{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.contenar{
+    width: 1400px;
+    height: 700px;
+    margin: 100px auto;
+    background-color: rgba(19, 128, 24, 0.822);
+    box-shadow: 0px 4px 20px 25px rgba(0, 0, 0, 0.25);
+    border: 12px solid rgb(24, 23, 23);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10%;
+}
+
+
+
+#daste-1{
+    width: 100px;
+    height: 150px;
+    background-color: blue;
+    margin-left: 50px;
+    border-radius: 10%;
+    animation-name:daste-1 ;
+    animation-duration: 1s;
+    animation-direction:alternate ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes daste-1 {
+    50%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translate( 0 , 210px);
+    }
+}
+
+
+
+#daste-2{
+    width: 100px;
+    height: 150px;
+    background-color: rgb(255, 0, 0);
+    margin-right: 50px;
+    border-radius: 10%;
+    animation-name:daste-2 ;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes daste-2 {
+    50%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translate( 0 , -210px);
+    }
+}
+
+
+
+
+
+
+#top{
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 995px;
+    animation-name: top;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#top:hover{
+    animation-play-state: paused;
+}
+@keyframes  top{
+    20%{
+        transform: translate(500px ,300px);
+    }
+    40%{
+        transform: translate(1010px,-30px);
+    }
+    60%{
+        transform: translate(600px , -300px);
+    }
+    80%{
+        transform: translate(0 ,10px);
+    }
+    100%{
+        transform: translateX(1000px);
+    }
+    
+}
